@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <customTable></customTable>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import { defineComponent } from 'vue'
+import { ElButton } from 'element-plus'
+import customTable from './components/customTable.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ElButton,
+    customTable
   }
 }
 </script>
